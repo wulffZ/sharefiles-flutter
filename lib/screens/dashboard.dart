@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_spinkit/flutter_spinkit.dart';
 
-class Loading extends StatefulWidget {
+class Dashboard extends StatefulWidget {
   @override
-  State<Loading> createState() => _LoadingState();
+  State<Dashboard> createState() => _DashboardState();
 }
 
-class _LoadingState extends State<Loading> {
+class _DashboardState extends State<Dashboard> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,22 +16,13 @@ class _LoadingState extends State<Loading> {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: const <Widget>[
               Text(
-                  'sharefiles',
-                  style: TextStyle(
+                'Dashboard',
+                style: TextStyle(
                   fontSize: 44,
                   letterSpacing: 2.0,
                   color: Colors.white,
                 ),
               ),
-              Text(
-                'now cross platform!',
-                style: TextStyle(
-                  fontSize: 18,
-                  color: Colors.white,
-                ),
-              ),
-              SizedBox(height: 35),
-              SpinKitRing(color: Colors.white, size: 80.0),
             ]),
       ),
     );
