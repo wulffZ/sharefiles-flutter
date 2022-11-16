@@ -165,7 +165,7 @@ class _SignUpState extends State<SignInWidget> {
           child: Padding(
         padding: const EdgeInsets.fromLTRB(100, 80, 100, 100),
         child: Form(
-          key: _formKeyPin,
+          key: _formKey,
           child: Column(
             children: [
               LogoWidget(),
